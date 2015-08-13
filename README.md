@@ -5,7 +5,7 @@ Instructor
 ------------
 
 Eduardo José Medina Alfaro
-- [Email](#email) isil@qd.pe
+- Email: isil@qd.pe
 
 ### Temario
 
