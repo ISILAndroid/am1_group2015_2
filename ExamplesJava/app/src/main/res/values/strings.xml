@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lesson1</string>
+    <string name="action_settings">Lesson1</string>
+    <string name="hello_world">Lesson1</string>
+    <string name="string_default">Lesson1</string>
+    <string name="title_activity_example_java1">ExampleJava1Activity</string>
+</resources>
