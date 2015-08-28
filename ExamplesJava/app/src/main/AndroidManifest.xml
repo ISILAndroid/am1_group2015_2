@@ -23,15 +23,20 @@
         <activity
             android:name=".ExampleJava2Activity"
             android:label="@string/title_activity_example_java2" >
-        </activity>
-        <activity
-            android:name=".CalculadoraActivity"
-            android:label="@string/title_activity_calculadora" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalculadoraActivity"
+            android:label="@string/title_activity_calculadora" >
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
         </activity>
     </application>
 
