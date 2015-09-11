@@ -12,9 +12,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
-        setContentView(R.layout.layout_relative1);
+        //setContentView(R.layout.layout_relative1);
         //setContentView(R.layout.layout_relative_example);
-        //setContentView(R.layout.layout_example1);
+        setContentView(R.layout.layout_example1);
         //setContentView(R.layout.layout_example2);
         //setContentView(R.layout.layout_example3);
         //setContentView(R.layout.layout_example4);
