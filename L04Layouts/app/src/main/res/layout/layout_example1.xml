@@ -40,6 +40,9 @@
             android:text="Log In"
             android:id="@+id/button12"
             android:background="@color/white"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black2"
             android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 
@@ -48,6 +51,7 @@
         android:layout_height="wrap_content"
         android:text="or log in using"
         android:layout_marginBottom="15dp"
+        android:textColor="#BDBDBD"
         android:id="@+id/textView" />
 
     <LinearLayout
@@ -60,10 +64,12 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:text="Facebook"
-            android:background="@color/blue"
+            android:background="@drawable/shape_around_blue"
             android:layout_marginRight="10dp"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:textColor="@color/white"
             android:id="@+id/button13" />
 
@@ -71,10 +77,12 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:text="Twitter"
-            android:background="@color/skyblue"
+            android:background="@drawable/shape_around_skye"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
+            android:textSize="14sp"
             android:textColor="@color/white"
+            android:textStyle="bold"
             android:id="@+id/button14" />
     </LinearLayout>
 </LinearLayout>
