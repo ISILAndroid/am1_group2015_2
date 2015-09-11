@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#F2F2F2</color>
+    <color name="blue">#4B7BD7</color>
+    <color name="skyblue">#00C5FD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black2">#555555</color>
+    <color name="black1">#1D1D1B</color>
+    <!-- #F2F2F2
+#4B7BD7
+#00C5FD
+#FFFFFF
+#555555
+#1D1D1B -->
+
+    <!-- transparencia -->
+    <!--
+    100 FF
+    95  F2
+    90  E6
+    85  D9
+    80  CC
+    75  BF
+    65  A6
+    60  99
+    55  8C
+    50  80
+    45  73
+    40  66
+    35  59
+    30  4d
+    25  40
+    20  33
+    15  26
+    10  1A
+    5   0D
+    0   00
+    -->
+</resources>
