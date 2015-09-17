@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+                android:gravity="center_horizontal" >
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/eteName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name">
+
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/eteLastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         android:hint="Last Name" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/eteUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:ems="10"
+                android:hint="Username" />
+
+            <EditText
+                android:id="@+id/eteEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:ems="10"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/etePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:ems="10"
+                android:inputType="textPassword"
+                 android:hint="Password"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:text="Fec Nac"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/lblfecnac"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar"
+                    android:textSize="18sp"
+                    android:gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <Spinner
+                        android:id="@+id/spLocation"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textSize="18sp"
+                        android:spinnerMode="dialog"
+                        android:entries="@array/data"
+                        android:prompt="@string/seleccionar"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                         android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Género: "
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <RadioGroup
+                        android:id="@+id/rbGenero"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rbM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="M" />
+
+                        <RadioButton
+                            android:id="@+id/rbF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="F" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/chkNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recibir Notificaciones" />
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:background="@color/skye"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/sign_up"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

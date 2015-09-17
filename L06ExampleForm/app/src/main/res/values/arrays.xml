@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+      <item >Surco</item>
+        <item >Magdalena</item>
+        <item >San Luis</item>
+        <item >Callao</item>
+        <item >San Miguel</item>
+        <item >Los Olivos</item>
+        <item >Jesus María</item>
+        <item >San Juan de Miraflores</item>
+        <item >Chorrillos</item>
+    </string-array>
+    
+</resources>
