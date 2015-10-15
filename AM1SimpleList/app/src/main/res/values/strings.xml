@@ -3,4 +3,6 @@
 
     <string name="hello_world">ISILTemplate</string>
     <string name="action_settings">ISILTemplate</string>
+    <string name="title_activity_simple_grid">SimpleGridActivity</string>
+    <string name="title_activity_adapter_list">AdapterListActivity</string>
 </resources>

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.isil.simplelist;
+package com.isil.simplelist.storage;
 
 
 public class Cheeses {

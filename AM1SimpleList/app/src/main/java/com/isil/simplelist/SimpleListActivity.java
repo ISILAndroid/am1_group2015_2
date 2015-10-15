@@ -10,8 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.isil.simplelist.storage.Cheeses;
 
-public class MainActivity extends ActionBarActivity {
+
+public class SimpleListActivity extends ActionBarActivity {
 
     private String[] mStrings = Cheeses.sCheeseStrings;
     private ListView lviCheeses;
@@ -19,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_simple_list);
         lviCheeses=(ListView)findViewById(R.id.lviCheeses);
         lviCheeses.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, mStrings));
