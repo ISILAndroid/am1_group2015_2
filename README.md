@@ -17,13 +17,13 @@ Eduardo José Medina Alfaro
 
 1. ListView
 
-        1.1. Inicializar
+ 1.1. Inicializar
 
         ```java
         lviCheeses=(ListView)findViewById(R.id.lviCheeses);
         ```
 
-        1.2. Origen de datos , puede ser un arreglo, un List o un ArrayList
+ 1.2. Origen de datos , puede ser un arreglo, un List o un ArrayList
 
         ```java
                 package com.isil.simplelist;
@@ -166,14 +166,14 @@ Eduardo José Medina Alfaro
                 private String[] mStrings = Cheeses.sCheeseStrings;
         ```
 
-        1.3. Adapter, siempre va requerir el Context , un layout para la celda y el origin de datos. Asociamos el adapter a la lista con el método "setAdapter"
+ 1.3. Adapter, siempre va requerir el Context , un layout para la celda y el origin de datos. Asociamos el adapter a la lista con el método "setAdapter"
 
         ```java
                 lviCheeses.setAdapter(new ArrayAdapter<String>(this,
                         android.R.layout.simple_list_item_1, mStrings));
         ```
 
-        1.4. Eventos
+ 1.4. Eventos
 
         ```java
             lviCheeses.setOnItemClickListener(new AdapterView.OnItemClickListener() {
