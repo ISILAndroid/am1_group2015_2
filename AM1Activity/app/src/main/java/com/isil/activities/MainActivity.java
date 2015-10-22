@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends ActionBarActivity {
 
     private Button btnAddNote;
+    private View tviLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         btnAddNote= (Button)findViewById(R.id.btnAddNote);
+        tviLogout= findViewById(R.id.tviLogout);
 
         btnAddNote.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +28,17 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+        tviLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                closeSesion();
+            }
+        });
+
+    }
+
+    private void closeSesion() {
+        finish();
     }
 
     private void gotoNote() {
