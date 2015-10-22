@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:id="@+id/tviLogout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:id="@+id/tviUser"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:padding="12dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skye"
+            android:text="Agregar Nota"
+            android:id="@+id/btnAddNote"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstNotes" />
+    </LinearLayout>
+</RelativeLayout>

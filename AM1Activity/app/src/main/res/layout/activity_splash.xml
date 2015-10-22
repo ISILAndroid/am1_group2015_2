@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context="com.isil.mynotesormlite.SplashActivity">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_notepad512"
+        android:id="@+id/iviLogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_note"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:id="@+id/header"
+        android:textColor="@color/white"
+        android:layout_above="@+id/iviLogo"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

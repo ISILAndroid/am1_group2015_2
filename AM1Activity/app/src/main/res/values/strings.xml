@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyNotesORMLite</string>
+
+    <string name="hello_world">MyNotesORMLite</string>
+    <string name="action_settings">MyNotesORMLite</string>
+    <string name="title_activity_splash">MyNotesORMLite</string>
+    <string name="my_note">MyNotesORMLite</string>
+    <string name="title_activity_login">MyNotesORMLite</string>
+    <string name="logout">Cerrar sesi\u00F3n</string>
+    <string name="esta_es_una_nota">Esta es un nota</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">MyNotesORMLite</string>
+    <string name="title_activity_note">MyNotesORMLite</string>
+
+    <!--
+     á \u00E1
+     é \u00E9
+     í \u00ED
+     ó \u00F3
+     ú \u00FA
+    -->
+</resources>
