@@ -1,5 +1,6 @@
 package com.isil.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -12,7 +13,7 @@ import java.util.TimerTask;
 
 public class SplashActivity extends ActionBarActivity {
 
-    private static final long SPLASH_SCREEN_DELAY = 2000;
+    private static final long SPLASH_SCREEN_DELAY = 6000;//4segundos
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,10 @@ public class SplashActivity extends ActionBarActivity {
         {
             @Override
             public void run() {
-                //initDb();
-                Intent intent=null;
-
-                    //intent=new Intent(SplashActivity.this, MainActivity.class);
-                    intent = new Intent(SplashActivity.this, LoginActivity.class);
-
+                //Actividad inicial, Siguiente Actividad
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                //Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+                //Intent intent = new Intent(SplashActivity.this,NoteActivity.class);
                 startActivity(intent);
                 finish();
             }

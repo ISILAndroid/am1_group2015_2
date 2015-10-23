@@ -2,13 +2,14 @@ package com.isil.activities;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class LoginActivity extends ActionBarActivity {
 
+    private static final String TAG ="LoginActivity" ;
     private Button btnLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class LoginActivity extends ActionBarActivity {
 
     @Override
     public void onBackPressed() {
+        Log.v(TAG, "onBackPressed");
         //super.onBackPressed();
     }
 }
