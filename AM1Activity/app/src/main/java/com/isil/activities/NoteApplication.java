@@ -44,6 +44,13 @@ public class NoteApplication extends Application {
     {
         lsNoteEntities.remove(noteEntity);
     }
+    public void uddateNote(int position, NoteEntity noteEntity)
+    {
+        if(position<lsNoteEntities.size())
+        {
+            lsNoteEntities.set(position, noteEntity);
+        }
+    }
 
     public List<NoteEntity> allNotes()
     {

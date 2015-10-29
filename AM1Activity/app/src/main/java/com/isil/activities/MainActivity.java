@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -66,15 +67,31 @@ public class MainActivity extends ActionBarActivity {
                 gotoNote();
             }
         });
-
         tviLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 closeSesion();
             }
         });
+        lstNotes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+                NoteEntity noteEntity= (NoteEntity)adapterView.getAdapter().getItem(position);
+                gotoNoteDetail(noteEntity);
+
+            }
+        });
     }
 
+    private void gotoNoteDetail(NoteEntity noteEntity) {
+        Bundle bundle= new Bundle();
+        bundle.putSerializable("ENTITY",noteEntity);
+
+        Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 
 
     private void closeSesion() {
