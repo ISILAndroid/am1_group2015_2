@@ -11,16 +11,18 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import com.isil.activities.model.NoteEntity;
+import com.isil.activities.model.RecetaEntity;
 import com.isil.activities.view.adapters.NoteAdapter;
+import com.isil.activities.view.adapters.RecetaAdapter;
 
 import java.util.List;
 
-public class MainActivity extends ActionBarActivity {
+public class RecetaActivity extends ActionBarActivity {
 
     private Button btnAddNote;
     private ListView lstNotes;
     private View tviLogout;
-    private List<NoteEntity> data;
+    private List<RecetaEntity> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,14 +46,14 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void populate() {
-        NoteAdapter noteAdapter= new NoteAdapter(this,data );
-        lstNotes.setAdapter(noteAdapter);
+        RecetaAdapter recetaAdapter= new RecetaAdapter(this,data );
+        lstNotes.setAdapter(recetaAdapter);
     }
 
     private void loadData() {
 
         NoteApplication application= (NoteApplication)getApplication();
-        data= application.allNotes();
+        data= application.allRecetas();
     }
 
     private void ui() {
@@ -88,7 +90,7 @@ public class MainActivity extends ActionBarActivity {
         Bundle bundle= new Bundle();
         bundle.putSerializable("ENTITY",noteEntity);
 
-        Intent intent = new Intent(MainActivity.this, NoteDetailActivity.class);
+        Intent intent = new Intent(RecetaActivity.this, NoteDetailActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
     }
@@ -99,7 +101,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void gotoNote() {
-        Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+        Intent intent = new Intent(RecetaActivity.this, NoteActivity.class);
         startActivity(intent);
     }
 

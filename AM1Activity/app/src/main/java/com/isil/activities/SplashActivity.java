@@ -26,6 +26,7 @@ public class SplashActivity extends ActionBarActivity {
             public void run() {
                 //Actividad inicial, Siguiente Actividad
                 Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                //Intent intent = new Intent(SplashActivity.this, RecetaActivity.class);
                 //Intent intent = new Intent(SplashActivity.this,MainActivity.class);
                 //Intent intent = new Intent(SplashActivity.this,NoteActivity.class);
                 startActivity(intent);
