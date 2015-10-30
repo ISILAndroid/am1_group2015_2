@@ -40,6 +40,7 @@
             android:padding="5dp"
             android:background="#D5EDED"
             android:text="Actualizar"
+            android:layout_margin="2dp"
             android:id="@+id/btnUpdate" />
 
         <Button
@@ -49,6 +50,7 @@
             android:padding="5dp"
             android:background="#D5EDED"
             android:text="Eliminar"
+            android:layout_margin="2dp"
             android:id="@+id/btnDelete" />
 
     </LinearLayout>

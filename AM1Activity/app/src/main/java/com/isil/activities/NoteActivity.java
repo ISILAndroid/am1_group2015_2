@@ -44,16 +44,25 @@ public class NoteActivity extends ActionBarActivity {
     }
 
     private void addNote() {
+
+        NoteApplication application= (NoteApplication)getApplication();
+
         name= eteName.getText().toString().trim();
         desc= eteDesc.getText().toString().trim();
         note= eteNote.getText().toString().trim();
 
         Calendar calendar= Calendar.getInstance();
         String ndate= ""+calendar.getTime();
-
-        NoteEntity noteEntity= new NoteEntity(name,desc,ndate);
-
-        NoteApplication application= (NoteApplication)getApplication();
+        NoteEntity last= application.lastNote();
+        int noteId;
+        if(last!=null)
+        {
+            noteId= last.getId()+1;
+        }else
+        {
+            noteId=1;
+        }
+        NoteEntity noteEntity= new NoteEntity(noteId,name,desc,ndate);
         application.addNote(noteEntity);
     }
     /*private void addNote() {

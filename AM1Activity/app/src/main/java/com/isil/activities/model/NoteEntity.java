@@ -16,10 +16,17 @@ public class NoteEntity  implements Serializable{
     private String addedDate;
     private String color;
 
-    public NoteEntity(String name, String description, String addedDate) {
+    public NoteEntity(int id,String name, String description, String addedDate) {
+        this.id=id;
         this.name = name;
         this.description = description;
         this.addedDate = addedDate;
+    }
+
+    public NoteEntity(int id,String name, String description) {
+        this.id=id;
+        this.name = name;
+        this.description = description;
     }
 
     public NoteEntity() {
