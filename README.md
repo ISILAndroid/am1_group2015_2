@@ -9,7 +9,7 @@ Instructor
 Eduardo José Medina Alfaro
 - Email: isil@qd.pe
 
-### Lesson 9 - Application
+### Lesson 10 - Application
 
         * Uso de Application como clase global de la App.
 
@@ -17,7 +17,7 @@ Eduardo José Medina Alfaro
 
  1.1. Registro en el manifest
 
-        ```xml
+        ```
               <application
                   android:name=".NoteApplication"
                   android:allowBackup="true"
@@ -28,7 +28,7 @@ Eduardo José Medina Alfaro
 
  1.2. Creamos la clase "NoteApplication"
 
-        ```java
+        ```
                package com.isil.activities;
                
                import android.app.Application;
@@ -165,7 +165,7 @@ Eduardo José Medina Alfaro
 
  1.3. Invocar a la clase Application en cualquier Activity o Fragment
 
-        ```java
+        ```
                    private void loadData() {
                 
                         NoteApplication application= (NoteApplication)getApplication();
