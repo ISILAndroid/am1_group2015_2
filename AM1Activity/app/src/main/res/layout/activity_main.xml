@@ -35,6 +35,8 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:dividerHeight="10dp"
+            android:divider="@color/black"
             android:id="@+id/lstNotes" />
     </LinearLayout>
 </RelativeLayout>
