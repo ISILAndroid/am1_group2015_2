@@ -11,8 +11,6 @@ Eduardo José Medina Alfaro
 
 ### Lesson 11 - Ejemplos para el proyecto.
 
-        * Uso de Application como clase global de la App.
-
 1. Google Maps
 
     * Ejemplo de como lanzar a Google Maps instalado en el equipo.
