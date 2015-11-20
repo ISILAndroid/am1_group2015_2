@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="com.isil.am2template.MessageActivity">
+
+    <fragment
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:name="com.isil.am2template.view.fragments.OneFragment"
+        android:id="@+id/fragmentOne"/>
+
+    <fragment
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:name="com.isil.am2template.view.fragments.TwoFragment"
+        android:id="@+id/fragmentTWo"/>
+
+</LinearLayout>
