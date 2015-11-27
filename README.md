@@ -1,44 +1,27 @@
 # am1_group2015_2
-Aplicaciones Móviles 1 - Grupo 2015-II
+Aplicaciones Móviles I - Android ISIL
 
-https://github.com/ISILAndroid
+## Presentación de Proyectos
 
-Instructor
-------------
+* Entregables de proyectos
 
-Eduardo José Medina Alfaro
-- Email: isil@qd.pe
+    1. Información del proyecto
+        - Integrantes.
+        - Descripción breve del proyecto.
 
-### Lesson 11 - Ejemplos para el proyecto.
+    2. Wireframe
+        - Flujo de la aplicación.
+        - Versiones del Wireframe.
 
-1. Google Maps
+    3. Base de datos
+        - Diagrama con tablas de la base de datos.
+        - Entidades utilizadas.
 
-    * Ejemplo de como lanzar a Google Maps instalado en el equipo.
+    4. Proyecto Android
+        - El proyecto debe estar operativo.
+        - No se entrega el proyecto por partes, debe estar unificado.
+        - Mostrar 3 flujos operativos, aparte del login y registro. 
 
-        ```
-        private void location_isil() {
-            // TODO Auto-generated method stub
-            Double latitude=-12.073449;
-            Double longitude=-76.948551;
-            String format = "geo:0,0?q=" + Double.toString(latitude) + "," + Double.toString(longitude) +"?z=8" +
-                    "(ISIL La Molina)";
-            Uri uri = Uri.parse(format);
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-
-            Log.v("CONSOLE", "mensaje " + intent);
-            if(intent!=null)
-            {
-                startActivity(intent);
-            }
-        }
-        ```
-
-2. Cámara , Tomar un foto
-
-
-
-### Referencia
-
-- [Cámara](http://developer.android.com/training/camera/photobasics.html)
-
+    5. Código fuente del proyecto.
+        - Proyecto comprimido en zip o rar con el nombre del proyecto.
 
